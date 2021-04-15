@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fail-check-photos.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

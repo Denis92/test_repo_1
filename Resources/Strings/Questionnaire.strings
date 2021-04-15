@@ -1,0 +1,14 @@
+/* 
+  Questionnaire.strings
+  ForwardLeasing
+*/
+
+// Main
+"title" = "Обмен";
+"month.payment" = "%@/мес.";
+"has.disadvantages.title" = "Есть недостатки";
+"grade.title" = "Оцените состояние вашего устройства";
+
+// Result
+"after.diagnostics.price.description" = "за состояние устройства после диагностики";
+"final.price.description" = "плата за возврат";

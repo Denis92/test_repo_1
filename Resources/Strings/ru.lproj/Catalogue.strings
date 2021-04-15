@@ -1,0 +1,23 @@
+/* 
+  Catalogue.strings
+  ForwardLeasing
+  
+*/
+
+"screen.title" = "Каталог";
+"screen.singleProduct.price" = "от %@/мес.";
+
+// Category Details
+"select.subcategory.dropdown.all.categories.text" = "Все категории";
+
+// Category subcategory selection
+"subcategory.list.title" = "Категории";
+"subcategory.list.all.option.title" = "все";
+
+// Category filters
+"subcategory.filters.title" = "Фильтровать";
+"subcategory.filters.clear" = "Сбросить";
+"subcategory.filters.apply" = "Применить";
+
+// Subscription
+"subscription.product.months" = "%d мес.";

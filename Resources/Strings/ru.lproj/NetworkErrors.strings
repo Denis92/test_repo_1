@@ -1,0 +1,18 @@
+/* 
+  NetworkErrors.strings
+  ForwardLeasing
+*/
+
+//custom
+
+"error.unknown.text" = "Неизвестная серверная ошибка";
+"error.parsing.text" = "Неверный ответ сервера";
+"error.no.internet.text" = "Проверьте подключение к интернету";
+"error.creating.request.data.text" = "Неверный формат входных данных";
+"error.no.token.text" = "Что-то пошло не так. Пожалуйста, войдите в приложение заново";
+"error.could.not.extract.token.text" = "Что-то пошло не так. Пожалуйста, войдите в приложение заново";
+"error.application.creation.please.log.in" = "Найдены активные заявки. Пожалуйста, войдите в приложение и аннулируйте их";
+"error.token.refresh.denied" = "Невозможно продолжить оформление заявки. Пожалуйста, войдите в приложение.";
+"error.invalid.pin.text" = "Неверный PIN-код";
+"error.mismatch.otp.text" = "Неверный код из SMS";
+"error.number.of.rquests.exceeded" = "Превышено количество запросов, заявка аннулирована";

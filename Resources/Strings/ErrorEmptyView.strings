@@ -1,0 +1,9 @@
+/* 
+  ErrorEmptyView.strings
+  ForwardLeasing
+*/
+
+"no.internet.title.text" = "Нет интернета";
+"no.internet.subtitle.text" = "Попробуйте обновить экран,\nкогда связь восстановится";
+"server.error.title.text" = "Что-то пошло не так";
+"server.error.subtitle.text" = "Проблема на нашей стороне,\nуже разбираемся. Попробуйте\nобновить экран позже.";

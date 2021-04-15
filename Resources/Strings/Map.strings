@@ -1,0 +1,8 @@
+/* 
+  Map.strings
+  ForwardLeasing
+*/
+
+"address.copied" = "Адрес скопирован";
+"pickup.button.title" = "Заберу отсюда";
+"pickup.button.return.title" = "Верну здесь";

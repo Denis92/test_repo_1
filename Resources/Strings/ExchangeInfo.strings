@@ -1,0 +1,44 @@
+/* 
+  ExchangeInfo.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Обмен";
+
+// Complete title
+"complete.title" = "Можете забрать ваше новое устройство!";
+
+// Barcode
+
+"barcode.title" = "Покажите продавцу в магазине";
+"barcode.info.title" = "Для обмена необходимо:";
+"barcode.info.desctiption" = "1. Ваш паспорт\n2. Рабочая SIM-карта\n3. Знать логины и пароли от ваших аккаунтов на устройстве, чтобы перед возвратом произвести их удаление";
+
+"barcode.complete.title" = "Перед передачей устройства";
+"barcode.complete.info.desctiption" = "1. Удалите / отвяжите ваши учётные записи с устройства. Для этого, перейдите в настройки устройства, далее Облако и учётные записи.\n2. Сбросьте состояние устройства до заводских настроек. Для этого, перейтите в настройки устройства, далее Общие настройки, далее Сброc, далее Сброс данных.\n3. Передайте устройство сотруднику магазина.";
+
+// Price
+
+"price.title" = "Плата за обмен";
+"price.equation.left.side" = "%@ + %@ = ";
+"price.unknown" = "0 ₽";
+"early.exchange.price.title" = "за ранний обмен";
+"device.state.price.title" = "за состояние устройства после диагностики";
+"total.price.title" = "итоговая стоимость за обмен";
+"unknown.total.price.title" = "Точная сумма появится после диагностики вашего устройства в магазине партнёре";
+
+// Store info
+
+"select.store.title" = "Выберите магазин для продолжения обмена";
+"select.store.button.title" = "Выбрать магазин";
+
+// Buttons
+
+"primary.button.return.to.contract.title" = "Перейти к договору";
+"primary.button.pass.diagnostics.title" = "Пройти диагностику";
+"primary.button.make.payment.title" = "Оплатить";
+"cancel.contract.button.title" = "Аннулировать договор";
+
+// Cancel contract
+
+"cancel.contract.alert.title" = "Подтвердить отмену заявки?";

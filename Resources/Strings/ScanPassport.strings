@@ -1,0 +1,15 @@
+/* 
+  ScanPassport.strings
+  ForwardLeasing
+*/
+
+"title.text" = "Сначала отсканируйте паспорт";
+"description.text" = "Захватите разворот целиком. Постарайтесь найти место посветлее и сделать так, чтобы пальцы не попали в объектив.";
+"take.photo.button.title" = "Сканировать";
+"upload.from.gallery.button.title" = "Загрузить из галереи";
+
+"scan.button.title" = "Сканировать";
+"camera.screen.title" = "Наведите камеру на первый разворот паспорта";
+
+"camera.not.supported.error.text" = "Устройство не поддерживает захват изображения";
+"capture.failed.error.text" = "Не удалось сделать снимок";

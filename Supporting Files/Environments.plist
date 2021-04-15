@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug</key>
+	<dict>
+		<key>configuration</key>
+		<string>Develop</string>
+	</dict>
+	<key>Develop</key>
+	<dict>
+		<key>host</key>
+		<string>subscribe-rf-front-test.forward.lc</string>
+		<key>scheme</key>
+		<string>https</string>
+		<key>sumsub</key>
+		<string>test-msdk.sumsub.com</string>
+	</dict>
+	<key>Staging</key>
+	<dict>
+		<key>host</key>
+		<string>subscribe-rf-front-test.forward.lc</string>
+		<key>scheme</key>
+		<string>https</string>
+		<key>sumsub</key>
+		<string>test-msdk.sumsub.com</string>
+	</dict>
+	<key>Live</key>
+	<dict>
+		<key>host</key>
+		<string>подпишись.рф</string>
+		<key>scheme</key>
+		<string>https</string>
+		<key>sumsub</key>
+		<string>msdk.sumsub.com</string>
+	</dict>
+	<key>AppStore</key>
+	<dict>
+		<key>configuration</key>
+		<string>Live</string>
+	</dict>
+</dict>
+</plist>

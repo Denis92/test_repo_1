@@ -1,0 +1,16 @@
+/* 
+  SubscriptionDetails.strings
+  ForwardLeasing
+*/
+
+"subscription.keys.section.title" = "Ключ подписки";
+"about.subscription.section.title" = "О подписке";
+"renew.subscription.section.title" = "Продление подписки";
+
+"share.button.title" = "Поделиться";
+"renew.button.title" = "Купить ещё раз за %@";
+
+"copy.snackbar.text" = "Код скопирован";
+
+"save.card.data.checkbox.title" = "Сохранить данные карты";
+"select.button.title" = "Выбрать";

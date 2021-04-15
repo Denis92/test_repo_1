@@ -1,0 +1,9 @@
+/* 
+  Authorization.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Профиль";
+"forgot.pin.button.title" = "Забыли код?";
+"sign.up.button.title" = "Зарегистрироваться";
+"sign.in.button.title" = "Войти";

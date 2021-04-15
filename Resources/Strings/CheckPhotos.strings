@@ -1,0 +1,12 @@
+/* 
+  CheckPhotos.strings
+  ForwardLeasing
+*/
+
+"pending.state.text" = "Сверяем фотографию в паспорте с вашим селфи";
+"success.state.text" = "Сверка прошла успешно!";
+"error.state.text" = "Ошибка на нашей стороне.\nПопробуйте позже.";
+"network.error.state.text" = "Нет интернета. Попробуйте обновить экран, когда связь восстановится";
+"fail.state.text" = "Противоречивые данные\nдокумента заявителя";
+"make.selfie.button.title" = "Сделать селфи";
+"repeat.button.title" = "Попробовать ещё раз";

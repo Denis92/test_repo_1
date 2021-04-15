@@ -1,0 +1,23 @@
+/* 
+  Common.strings
+  ForwardLeasing
+
+*/
+
+"error" = "Ошибка";
+"ok" = "ОК";
+"cancel" = "Отмена";
+"close" = "Закрыть";
+"done" = "Готово";
+"delete" = "Удалить";
+"save" = "Сохранить";
+"yes" = "Да";
+"no" = "Нет";
+"continue" = "Продолжить";
+"refresh" = "Обновить";
+"repeat" = "Повторить";
+"confirm" = "Подтвердить";
+"buy" = "Купить";
+"loading" = "Загрузка...";
+"further" = "Далее";
+"update" = "Обновить";

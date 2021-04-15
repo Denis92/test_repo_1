@@ -1,0 +1,14 @@
+/* 
+  Onboarding.strings
+  ForwardLeasing
+*/
+
+"photo.page" = "Сделайте селфи и сфотографируйте паспорт";
+"contract.page" = "Подпишите договор онлайн";
+"delivery.page" = "Заберите в магазине или оформите доставку";
+"device.state.page" = "Оцените состояние вашего устройства";
+"go.to.store.page" = "Направляйтесь в выбранный магазин";
+"skipButton" = "Пропустить";
+"backButton" = "Назад";
+"nextButton" = "Далее";
+"goButton" = "Поехали";

@@ -1,0 +1,10 @@
+/* 
+  Selfie.strings
+  ForwardLeasing
+*/
+
+
+"title.text" = "Теперь сделаем фотографию";
+"description.text" = "Приготовьтесь сделать селфи. Удостоверьтесь, что вокруг хорошее освещение.";
+"make.selfie.button.title" = "Сделать селфи";
+"liveness.error.text" = "Произошла ошибка, попробуйте сделать фото ещё раз";

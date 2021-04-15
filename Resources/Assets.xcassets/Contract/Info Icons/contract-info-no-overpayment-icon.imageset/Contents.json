@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "contract-info-no-overpayment-icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

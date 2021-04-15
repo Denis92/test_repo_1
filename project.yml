@@ -1,0 +1,145 @@
+---
+name: ForwardLeasing
+configs:
+  AppStore: release
+  Live: release
+  Staging: release
+  Develop: debug
+  Debug: debug
+options:
+  deploymentTarget:
+    iOS: '12.0'
+  defaultConfig: Develop
+  bundleIdPrefix: lc.forward
+  groupSortPosition: top
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+settings:
+  base:
+    SWIFT_VERSION: 5.3
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+    MTL_ENABLE_DEBUG_INFO: 'YES'
+    ENABLE_BITCODE: 'NO'
+    SWIFT_COMPILATION_MODE: wholemodule
+    SUPPORTS_MACCATALYST: 'NO'
+targets:
+  ForwardLeasing:
+    type: application
+    platform: iOS
+    sources:
+    - Sources
+    - Resources
+    - Supporting Files
+    settings:
+      base:
+        MARKETING_VERSION: 0.0.1
+        CURRENT_PROJECT_VERSION: 26
+        INFOPLIST_FILE: Supporting Files/Info.plist
+        SWIFT_OBJC_BRIDGING_HEADER: Supporting Files/ForwardLeasing-Bridging-Header.h
+        TARGETED_DEVICE_FAMILY: 1
+        VERSIONING_SYSTEM: apple-generic
+        PRODUCT_BUNDLE_IDENTIFIER: lc.forward.app.redesign
+        DEVELOPMENT_TEAM: B6R955PF8Q
+        CODE_SIGN_STYLE: Manual
+      configs:
+        AppStore:
+          CODE_SIGN_IDENTITY: iPhone Distribution
+          PROVISIONING_PROFILE_SPECIFIER: General Debug Ad Hoc Profile
+          ENABLE_BITCODE: 'YES'
+          MTL_ENABLE_DEBUG_INFO: 'NO'
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+        Live:
+          CODE_SIGN_IDENTITY: iPhone Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Forward Leasing Redesign Ad Hoc Profile
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+        Staging:
+          CODE_SIGN_IDENTITY: iPhone Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Forward Leasing Redesign Ad Hoc Profile
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+        Develop:
+          CODE_SIGN_IDENTITY: iPhone Developer
+          PROVISIONING_PROFILE_SPECIFIER: Forward Leasing Redesign Dev Profile
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+          SWIFT_COMPILATION_MODE: singlefile
+        Debug:
+          CODE_SIGN_IDENTITY: iPhone Developer
+          PROVISIONING_PROFILE_SPECIFIER: Forward Leasing Redesign Dev Profile
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+          SWIFT_COMPILATION_MODE: singlefile
+    preBuildScripts:
+    - script: '"$PODS_ROOT/R.swift/rswift" generate "$SRCROOT/Resources/R.generated.swift"'
+      name: R.Swift
+      inputFiles:
+      - "$TEMP_DIR/rswift-lastrun"
+      outputFiles:
+      - "$SRCROOT/Resources/R.generated.swift"
+    postCompileScripts:
+    - script: |
+        for f in $(find "${SRCROOT}/Resources/Strings" -name "*.strings");
+        do
+          perl ${SRCROOT}/Resources/Scripts/BreakingSpaceScript.pl $f
+        done
+      name: Check for breaking spaces
+    postBuildScripts:
+    - script: |
+        if [ "${CONFIGURATION}" = "Debug" ]; then
+          ${PODS_ROOT}/SwiftLint/swiftlint
+        fi
+      name: Run SwiftLint
+    - script: |
+        TAGS="TODO:|FIXME:"
+        echo "searching ${SRCROOT} for ${TAGS}"
+        find "${SRCROOT}" \( -name "*.swift" \) \( -not -path "*/Pods/*" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($TAGS).*\$" | perl -p -e "s/($TAGS)/ warning: \$1/"
+      name: Highlight TODOs and FIXMEs
+  ForwardLeasingTests:
+    type: bundle.unit-test
+    platform: iOS
+    dependencies:
+    - target: ForwardLeasing
+    sources:
+    - ForwardLeasingTests
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: lc.forward.app.redesign
+      CODE_SIGN_STYLE: Automatic
+schemes:
+  ForwardLeasing:
+    build:
+      targets:
+        ForwardLeasing: all
+    run:
+      config: Develop
+      environmentVariables:
+      - variable: OS_ACTIVITY_MODE
+      - value: disable
+      - isEnabled: false
+    test:
+      config: Develop
+      targets:
+      - ForwardLeasingTests
+      gatherCoverageData: true
+    profile:
+      config: AppStore
+    analyze:
+      config: Develop
+    archive:
+      config: AppStore
+  ForwardLeasingTests:
+    build:
+      targets:
+        ForwardLeasingTests: all
+    run:
+      config: Debug
+      environmentVariables:
+      - variable: OS_ACTIVITY_MODE
+      - value: disable
+      - isEnabled: false
+    test:
+      config: Develop
+      gatherCoverageData: true
+    profile:
+      config: AppStore
+    analyze:
+      config: Develop
+    archive:
+      config: AppStore

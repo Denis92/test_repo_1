@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>payments</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d платежей</string>
+			<key>one</key>
+			<string>%d платёж</string>
+			<key>few</key>
+			<string>%d платежа</string>
+			<key>many</key>
+			<string>%d платежей</string>
+		</dict>
+	</dict>
+	<key>months</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d месяцев</string>
+			<key>one</key>
+			<string>%d месяц</string>
+			<key>few</key>
+			<string>%d месяца</string>
+			<key>many</key>
+			<string>%d месяцев</string>
+		</dict>
+	</dict>
+	<key>remainingPayments</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Осталось %d платежей</string>
+			<key>one</key>
+			<string>Остался %d платёж</string>
+			<key>few</key>
+			<string>Осталось %d платежа</string>
+			<key>many</key>
+			<string>Осталось %d платежей</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

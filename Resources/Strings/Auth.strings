@@ -1,0 +1,31 @@
+/* 
+  Auth.strings
+  ForwardLeasing
+*/
+
+"agreement.electronic.signature" = "Проставляя галочку, я подтверждаю, что ознакомился с соглашением об использовании простой электронной подписи и согласен с его условиями, в т. ч. для подписания согласия на запрос в бюро кредитных историй.";
+"agreement.personal.data" = "Я ознакомился с текстом согласия и подтверждаю возможность обработки моих персональных данных ООО «Форвард Лизинг».";
+"electronic.signature.agreement.key.word" = "соглашением";
+"personal.data.agreement.key.word" = "согласия";
+
+"phone.field.title" = "Телефон";
+"email.field.title" = "E-mail";
+
+"code.confirmation.application.text" = "Для подтверждения введите код из SMS,\n который мы вам отправили.";
+"code.confirmation.register.text" = "Для входа введите код из SMS, который мы вам отправили";
+"code.confirmation.repeat.button.title" = "Отправить код повторно";
+"code.confirmation.remain.time" = "Отправить код повторно можно через %@.";
+
+"pin.code.create.title" = "Придумайте новый PIN-код для входа";
+"pin.code.repeat.title" = "Повторите PIN-код ";
+"pin.code.alert.message" = "PIN-коды не овпадают. Попробуйте ещё раз.";
+
+"registration.title" = "Регистрация";
+
+"pin.code.recovery.title" = "Восстановление PIN-кода";
+"pin.code.recovery.subtitle.text" = "Мы вышлем вам SMS c кодом, чтобы подтвердить номер";
+"pin.code.alert.message" = "PIN-коды не совпадают. Попробуйте ещё раз.";
+
+"wrong.pin.code.alert.title" = "Неверный PIN-код";
+"wrong.code.alert.title" = "Неверный код из SMS";
+"wrong.code.alert.ok.button.title" = "Ок";

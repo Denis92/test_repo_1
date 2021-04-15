@@ -1,0 +1,336 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Differentiator (4.0.1)
+  - Firebase/Analytics (7.0.0):
+    - Firebase/Core
+  - Firebase/Core (7.0.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 7.0.0)
+  - Firebase/CoreOnly (7.0.0):
+    - FirebaseCore (= 7.0.0)
+  - Firebase/Crashlytics (7.0.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 7.0.0)
+  - Firebase/Messaging (7.0.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 7.0.0)
+  - FirebaseAnalytics (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.0.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - FirebaseCore (7.0.0):
+    - FirebaseCoreDiagnostics (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.0.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30906.0)
+  - FirebaseCrashlytics (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleDataTransport (~> 8.0)
+    - nanopb (~> 2.30906.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstallations (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebaseMessaging (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstanceID (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Reachability (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FLDiagnostic (1.2.8):
+    - Alamofire (~> 5)
+    - Mute (~> 0.6)
+    - Reachability
+    - RxAppState (~> 1.6.0)
+    - RxCocoa (~> 5)
+    - RxCoreMotion (~> 1.2.1)
+    - RxDataSources (~> 4.0)
+    - RxKeyboard (~> 1.0.0)
+    - RxOptional (~> 4.1.0)
+    - RxSwift (~> 5)
+    - SnapKit (~> 5.0.0)
+    - SVProgressHUD
+  - GoogleAppMeasurement (7.0.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - GoogleDataTransport (8.0.0):
+    - nanopb (~> 2.30906.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.0.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.0.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.0.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.0.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.0.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.0.0)"
+  - GoogleUtilities/Reachability (7.0.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.0.0):
+    - GoogleUtilities/Logger
+  - ISO8601DateFormatterValueTransformer (0.6.1):
+    - RKValueTransformers (~> 1.1.0)
+  - KeychainAccess (4.2.0)
+  - Kingfisher (5.15.0):
+    - Kingfisher/Core (= 5.15.0)
+  - Kingfisher/Core (5.15.0)
+  - MarqueeLabel (4.0.2)
+  - Mute (0.6.0)
+  - nanopb (2.30906.0):
+    - nanopb/decode (= 2.30906.0)
+    - nanopb/encode (= 2.30906.0)
+  - nanopb/decode (2.30906.0)
+  - nanopb/encode (2.30906.0)
+  - NotificationBannerSwift (3.0.2):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - PocketSocket (1.0.1):
+    - PocketSocket/Client (= 1.0.1)
+    - PocketSocket/Core (= 1.0.1)
+    - PocketSocket/Server (= 1.0.1)
+  - PocketSocket/Client (1.0.1):
+    - PocketSocket/Core
+  - PocketSocket/Core (1.0.1)
+  - PocketSocket/Server (1.0.1):
+    - PocketSocket/Client
+  - PocketSVG (2.6.0)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - PromisesObjC (1.2.11)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - Reachability (3.2)
+  - ReactiveObjC (3.1.1)
+  - RestKit (0.27.3):
+    - RestKit/Core (= 0.27.3)
+  - RestKit/Core (0.27.3):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.27.3):
+    - RestKit/ObjectMapping
+  - RestKit/Network (0.27.3):
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.27.3):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.27.3):
+    - TransitionKit (~> 2.2)
+  - RKValueTransformers (1.1.3)
+  - RxAppState (1.6.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCoreMotion (1.2.1):
+    - RxSwift
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxKeyboard (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SDWebImage (5.9.2):
+    - SDWebImage/Core (= 5.9.2)
+  - SDWebImage/Core (5.9.2)
+  - SnapKit (5.0.1)
+  - SOCKit (1.1)
+  - SumSubstanceKYC/Core (2.14.1):
+    - PocketSocket
+    - PocketSVG
+    - Reachability
+    - ReactiveObjC
+    - RestKit (>= 0.27.3)
+    - SDWebImage
+    - YYText
+  - SumSubstanceKYC/Liveness3D (2.14.1):
+    - SumSubstanceKYC/Core
+    - ZoomAuthSDK (= 8.12.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftLint (0.40.2)
+  - SwiftyBeaver (1.9.1)
+  - TransitionKit (2.2.1)
+  - YandexMapsMobile (4.0.0-lite)
+  - YYText (1.0.7)
+  - ZoomAuthSDK (8.12.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Firebase/Analytics
+  - Firebase/Crashlytics
+  - Firebase/Messaging
+  - FLDiagnostic (from `https://github.com/blinovarcsinus/FLDiagnostic.git`)
+  - KeychainAccess
+  - Kingfisher
+  - NotificationBannerSwift
+  - PromiseKit
+  - R.swift
+  - SnapKit
+  - SumSubstanceKYC/Liveness3D
+  - SwiftLint
+  - SwiftyBeaver
+  - YandexMapsMobile (= 4.0.0-lite)
+
+SPEC REPOS:
+  https://github.com/SumSubstance/Specs.git:
+    - SumSubstanceKYC
+    - ZoomAuthSDK
+  trunk:
+    - Alamofire
+    - Differentiator
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
+    - ISO8601DateFormatterValueTransformer
+    - KeychainAccess
+    - Kingfisher
+    - MarqueeLabel
+    - Mute
+    - nanopb
+    - NotificationBannerSwift
+    - PocketSocket
+    - PocketSVG
+    - PromiseKit
+    - PromisesObjC
+    - R.swift
+    - R.swift.Library
+    - Reachability
+    - ReactiveObjC
+    - RestKit
+    - RKValueTransformers
+    - RxAppState
+    - RxCocoa
+    - RxCoreMotion
+    - RxDataSources
+    - RxKeyboard
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - SOCKit
+    - SVProgressHUD
+    - SwiftLint
+    - SwiftyBeaver
+    - TransitionKit
+    - YandexMapsMobile
+    - YYText
+
+EXTERNAL SOURCES:
+  FLDiagnostic:
+    :git: https://github.com/blinovarcsinus/FLDiagnostic.git
+
+CHECKOUT OPTIONS:
+  FLDiagnostic:
+    :commit: 06ea27b6d463355ffa9d087851a4f5b7b48be046
+    :git: https://github.com/blinovarcsinus/FLDiagnostic.git
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Firebase: 50be68416f50eb4eb2ecb0e78acab9a051ef95df
+  FirebaseAnalytics: c1166b7990bae464c6436132510bb718c6680f80
+  FirebaseCore: cf3122185fce1cf71cedbbc498ea84d2b3e7cb69
+  FirebaseCoreDiagnostics: 5f4aa04fdb04923693cc704c7ef9158bdf41a48b
+  FirebaseCrashlytics: bd430b7323e8b49492a93e563e81899d0615f917
+  FirebaseInstallations: c28d4bcbb5c6884d1a39afbc0bd7fc590e31e9b7
+  FirebaseInstanceID: c03b49743725092f7eb9d4b96ff40efadd830426
+  FirebaseMessaging: ecf9e04716b7ff1f1d92debab4d6f0e6bdb490aa
+  FLDiagnostic: a4818c86ad554e5bb3b91727c840347eb53dee9b
+  GoogleAppMeasurement: 7790ef975d1d463c8614cd949a847e612edf087a
+  GoogleDataTransport: 6ce8004a961db1b905740d7be106c61ba7e89c21
+  GoogleUtilities: ffb2f4159f2c897c6e8992bd7fbcdef8a300589c
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
+  Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
+  MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+  Mute: 66213d0aced6a074c7ab88b45ec20a9d54b1b7fb
+  nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
+  NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
+  PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
+  PocketSVG: 7d7086b0ed95311b3632150d4e1b4488fbf279f1
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
+  RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
+  RxAppState: b633d7370970ecb80081912ea08a7bf3eb644b4e
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxCoreMotion: d4edac149ab1e9c4d5bf0e22d786e8169e22a274
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: 0b42b8719ab0c5257177d5894306e8a336b21cbb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  SumSubstanceKYC: 70adb0dedd77317f4eb81e4150fcc76786dd0601
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: 1216c910d27c2633ade33b4f071bb6b930982e62
+  SwiftyBeaver: a1f5691458561414bcfab51874b2b7445451602b
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
+  YandexMapsMobile: d7d7f3b452209b4c2787beb53bb2dfcea259c70c
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZoomAuthSDK: 249880fac1d310c38b07ae1ee0108c2244fa5b6f
+
+PODFILE CHECKSUM: 6d092f22fec37afaa47644a8a036e300db7503ac
+
+COCOAPODS: 1.9.3

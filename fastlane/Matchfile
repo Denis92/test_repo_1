@@ -1,0 +1,6 @@
+git_url("git@git.kode-t.ru:base-code/ios-code-signing.git")
+storage_mode("git")
+app_identifier("*")
+shallow_clone true
+force_for_new_devices true
+ENV["MATCH_PASSWORD"] = "123Letmein"

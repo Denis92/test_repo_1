@@ -1,0 +1,19 @@
+/* 
+  ProductDetails.strings
+  ForwardLeasing
+*/
+
+"color.picker.title" = "Цвет корпуса: %@";
+"payments.count.title" = "Количество платежей";
+"delivery.picker.title" = "Способ получения";
+"program.picker.title" = "Выберите программу";
+"features.section.title" = "Основные характеристики";
+"full.features.section.title" = "Подробное описание";
+"make.order.button.title" = "Оформить %@";
+"exchange.button.title" = "Обменять на этот";
+
+"monthly.sum.hint.label.text" = "Ежемесячный платеж";
+"monthly.sum.text" = "%@/мес.";
+"leasing.sum.property.text" = "Стоимость техники";
+"residual.sum.property.text" = "Остаточная стоимость";
+"payments.count.property.text" = "Количество платежей";

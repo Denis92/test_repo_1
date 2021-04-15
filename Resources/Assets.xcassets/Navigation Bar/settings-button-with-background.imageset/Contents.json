@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "settings-button-with-background.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

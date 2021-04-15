@@ -1,0 +1,21 @@
+/* 
+  SendingApplication.strings
+  ForwardLeasing
+  
+*/
+
+"sending.view.title" = "Отправляем заявку...";
+"ring.view.title" = "Обрабатываем заявку...";
+"ring.view.subtitle" = "Обычно не более минуты";
+"almost.done.view.title" = "Осталось совсем чуть-чуть...";
+"almost.done.view.subTitle" = "Обычно не более минуты";
+"longer.than.necessary.view.title" = "Расмотрение идёт дольше обычного...";
+"longer.than.necessary.view.subTitle" = "Вы можете подождать еще немного или проверить статус позднее.";
+"longer.than.necessary.view.button.cancel.button" = "Аннулировать заявку";
+"longer.than.necessary.view.button.try.later" = "Проверить позже";
+"accepted.view.title" = "Заявка одобрена!";
+"accepted.view.button.next" = "Продолжить";
+"fail.view.title.did.not.sent" = "Заявка не отправлена";
+"fail.view.title.denied" = "Заявка отклонена";
+"fail.view.button.repeat" = "Повторить";
+"fail.view.title.is.impossible" = "Продолжение оформления невозможно";

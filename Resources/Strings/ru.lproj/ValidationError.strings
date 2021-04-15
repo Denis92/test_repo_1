@@ -1,0 +1,20 @@
+/* 
+  ValidationError.strings
+  ForwardLeasing
+*/
+
+"empty.text.error" = "Это поле необходимо заполнить";
+"phone.validation.error" = "Неверный формат номера";
+"email.validation.error" = "Неверный формат email";
+"pin.validation.error" = "Неверный формат PIN-кода";
+"date.validation.error" = "Неверный формат даты";
+"date.of.birth.validation.error" = "Укажите дату рождения";
+"firstname.validation" = "имя";
+"middlename.validation" = "отчество";
+"lastname.validation" = "фамилию";
+"name.validation.error" = "Введите %@ на русском языке.";
+"salary.validation.error" = "Среднемесячный доход должен быть больше нуля.";
+"invalid.cyrillic.format" = "Введены неверные символы";
+"registration.address.validation.error" = "Укажите корректный адрес регистрации";
+"passport.issuers.code.validation.Error" = "Укажите код подразделения, выдавшего паспорт в формате 000-000";
+"delivery.address.validation.error" = "Укажите корректный адрес доставки";

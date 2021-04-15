@@ -1,0 +1,31 @@
+/* 
+  SignedContract.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Получение товара";
+
+"delivery.title.text" = "Подпишите соглашение о передаче товара";
+"delivety.signed.title.text" = "Договор № %@ и доставка оформлены!";
+"delivery.address.title.text" = "Адрес доставки";
+"delivery.date.title.text" = "Ожидаемая дата доставки";
+"delivery.sign.agreement.button.title" = "Подписать соглашение";
+"delivery.cancel.contract.button.title" = "Аннулировать договор";
+"delivery.additional.info.text" = "Мы свяжемся с вами для подтверждения адреса и даты доставки. Контролируйте статус в своём профиле. Если остались вопросы – позвоните нам 8-800-770-75-75.";
+"delivery.date.before" = "До %@";
+
+"pickup.barcode.title" = "Покажите штрих-код и ваш паспорт сотруднику магазина";
+"pickup.barcode.sms.info.text" = "Ссылка на штрих-код и договор также отправлены вам в SMS-сообщении.";
+
+"pickup.title.text" = "Договор № %@ оформлен!";
+"pickup.store.info.title.text" = "Магазин для получения";
+"pickup.store.info.address.was.copied.text" = "Адрес скопирован";
+"pickup.store.info.select.other.button.title" = "Выбрать другой";
+"pickup.additional.info.text" = "Обязательно свяжитесь с выбранным магазином перед посещением, поскольку режим работы может отличаться от указанного на сайте. Если остались вопросы – позвоните нам 8-800-770-75-75.";
+
+"cancel.contract.alert.title" = "Подтвердить аннулирование\nдоговора?";
+"cancel.delivery.alert.title" = "Нажимая «Да» вы подтверждаете отмену доставки и договора лизинга, заключенного с ООО «Форвард лизинг». Денежные средства будут возвращены на карту.";
+"cancel.application.default.text" = "Подтвердить отмену заявки?";
+
+"open.apple.maps.action.title" = "Apple Maps";
+"open.google.maps.action.title" = "Google Maps";

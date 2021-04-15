@@ -1,0 +1,95 @@
+/* 
+  ContractDetails.strings
+  ForwardLeasing
+*/
+
+// Main
+"pay.button.title" = "Внести платёж %@";
+"cancel.delivery.button.title" = "Отменить доставку";
+
+// Delivery history
+"delivery.status.title" = "Статус доставки";
+"delivery.error.title" = "Ошибка";
+"delivery.lost.title" = "Товар утерян";
+"delivery.created.title" = "Доставка оформлена";
+"delivery.shipped.title" = "Заказ отправлен";
+"delivery.delivering.title" = "Заказ в пути";
+"delivery.completed.title" = "Заказ доставлен";
+
+// Contract Details info
+"month.payment.subtitle" = "Ежемесячный платеж";
+"contract.number" = "Договор %@";
+"before.day.of.month" = "До %d-го числа";
+"date.of.month.payment" = "Дата ежемесячного платежа";
+"delivering.status.subtitle" = "Договор действует с момента получения товара";
+
+// Contract Exchange info
+"exchange.options.title" = "Доступен ранний обмен на новый за %@";
+"remaining.payments.for.free.exchange" = "%@ до бесплатного обмена";
+"exchange.month.price.greater.text" = "Больше на %@ в месяц";
+"exchange.month.price.lower.text" = "Меньше на %@ в месяц";
+"exchange.month.price.same.text" = "Ежемесячный платёж остается прежним";
+
+// Additional info
+"buyout.title" = "Досрочный выкуп";
+"buyout.description" = "Полный досрочный выкуп устройства возможен в любой момент. Выкуп осуществляется без каких-либо дополнительных комиссий и платежей.";
+"buyout.button.title" = "Выкупить за %@";
+
+"return.info.title" = "Возврат";
+"return.info.description" = "Для возврата вам необходимо нажать на кнопку «оформить возврат» и ответить на несколько простых вопросов о состоянии устройства, после чего мы свяжемся с вами в течение 3 рабочих дней для подтверждения и согласования комфортного способа передачи.";
+"return.info.button.title" = "Оформить возврат";
+
+"warranty.service.title" = "Гарантийное обслуживание";
+"warranty.service.URL.key.word" = "службу поддержки";
+"warranty.service.description" = "На смартфон распространяется гарантия производителя. Гарантийный срок отсчитывается c момента получения в магазине-партнёре и составляет 1 Год. По вопросам обслуживания, а также при возникновении проблем с устройством обратитесь в службу поддержки компании Apple.";
+
+"has.penalty.alert.message" = "У вас есть штрафы за просрочку платежей. %@ пока недоступен.";
+"return.device" = "Возврат устройства";
+"buyout.device" = "Выкуп устройства";
+
+// Payment schedule
+"payments.schedule.title" = "График платежей";
+"payment.status.paid" = "Оплачен";
+"payment.status.overdue" = "Просрочен";
+"payment.status.current" = "Текущий платёж";
+"payment.status.last" = "Последний платёж";
+"payment.date" = "до %@";
+"payment.residue" = "Остаток";
+"payment.fine" = "+ %@ - штраф за просрочку";
+"remaining.payments.title" = "%@ на сумму %@";
+"payments.schedule.info.text" = "Договор закроется и вы сможете обменять устройство на новое или выкупить по остаточной стоимости";
+"payments.schedule.exchange.text" = "Доступен ранний обмен за %@";
+
+// Documents
+"document.default.title" = "Документ";
+
+// About product
+"about.product.title" = "Описание";
+
+// Cards
+"new.card.title" = "Новая карта";
+
+// Exchange application
+
+"diagnostics.button.title" = "Пройти диагностику";
+"comission.button.title" = "Оплатить комиссию";
+"payment.button.title" = "Перейти к оплате";
+"continue.button.title" = "Продолжить";
+"cancel.application.button.title" = "Отменить заявку";
+"exchange.month.price" = "%@/мес.";
+
+"exchange.status.comission" = "Стоимость обмена рассчитана";
+"exchange.status.free.exchange" = "Бесплатный обмен";
+"exchange.status.paid" = "Оплата завершена";
+
+"return.status.created" = "Создана заявка на возврат. Действительно до %@";
+"return.status.paid" = "Комиссия оплачена";
+"return.status.diagnostics.complete" = "Диагностика пройдена";
+"return.application.title" = "Заявка на возврат";
+"return.application.hint.text" = "Сделайте возврат до %@ (включительно). %@ заявка будет автоматически аннулирована.";
+
+"exchange.application.title" = "Заявка на обмен";
+"exchange.application.hint.text" = "Если до момента платежа вы не завершите обмен, заявка будет аннулирована";
+
+"exchange.diagnostics.title" = "Расчитываем стоимость обмена / возврата устройства";
+"exchange.diagnostics.subtitle" = "Дождитесь завершения процесса";

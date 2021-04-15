@@ -1,0 +1,23 @@
+/* 
+  Profile.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Профиль";
+
+"greeting.label.title" = "%@,\nc возвращением";
+
+"segment.devices.title" = "Устройства";
+"segment.services.title" = "Сервисы";
+
+"closed.contracts.section.title" = "Завершённые договоры";
+"closed.contract.date" = "Завершен %@";
+
+"cancel.application.alert.title" = "Подтвердить отмену заявки?";
+
+"empty.devices.title" = "Здесь будет отображаться информация по вашим устройствам";
+"empty.services.title" = "Здесь будет отображаться информация по вашим сервисам";
+
+"exchange.application.created.title" = "Создана заявка на обмен.";
+"return.application.created.title" = "Создана заявка на возврат.";
+"application.expiration.date.title" = "Действительно до %@";

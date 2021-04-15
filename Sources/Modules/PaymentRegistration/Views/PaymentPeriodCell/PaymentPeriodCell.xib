@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vFU-4k-hP8" customClass="PaymentPeriodCell" customModule="Forward_Leasing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="587" height="518"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iMU-MB-Mnx">
+                <rect key="frame" x="0.0" y="0.0" width="587" height="518"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Октябрь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dha-kl-JND">
+                        <rect key="frame" x="261.5" y="0.0" width="64" height="19"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="baseLight"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 590 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-cU-z0j">
+                        <rect key="frame" x="213.5" y="27" width="160" height="48"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="41"/>
+                        <color key="textColor" name="baseLight"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Платёж #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaW-gi-jwy">
+                        <rect key="frame" x="253.5" y="83" width="80" height="19"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="baseLight"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="backgroundBlue"/>
+                <constraints>
+                    <constraint firstItem="dha-kl-JND" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iMU-MB-Mnx" secondAttribute="leading" id="6ak-RB-i4b"/>
+                    <constraint firstItem="FaW-gi-jwy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iMU-MB-Mnx" secondAttribute="leading" id="9AR-Gl-x0v"/>
+                    <constraint firstItem="dha-kl-JND" firstAttribute="top" secondItem="iMU-MB-Mnx" secondAttribute="top" id="Ep0-dV-eIJ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hG3-cU-z0j" secondAttribute="trailing" id="Fml-G3-U1s"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FaW-gi-jwy" secondAttribute="bottom" id="KrL-9Z-y7U"/>
+                    <constraint firstItem="hG3-cU-z0j" firstAttribute="centerX" secondItem="iMU-MB-Mnx" secondAttribute="centerX" id="Qp9-Yi-Zeo"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FaW-gi-jwy" secondAttribute="trailing" id="aI9-aq-tnN"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dha-kl-JND" secondAttribute="trailing" id="iLu-aO-4lH"/>
+                    <constraint firstItem="hG3-cU-z0j" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iMU-MB-Mnx" secondAttribute="leading" id="m0F-hN-kej"/>
+                    <constraint firstItem="FaW-gi-jwy" firstAttribute="centerX" secondItem="iMU-MB-Mnx" secondAttribute="centerX" id="mLH-xG-oN4"/>
+                    <constraint firstItem="hG3-cU-z0j" firstAttribute="top" secondItem="dha-kl-JND" secondAttribute="bottom" constant="8" id="psm-ZL-0h9"/>
+                    <constraint firstItem="FaW-gi-jwy" firstAttribute="top" secondItem="hG3-cU-z0j" secondAttribute="bottom" constant="8" id="sjc-gH-fnw"/>
+                    <constraint firstItem="dha-kl-JND" firstAttribute="centerX" secondItem="iMU-MB-Mnx" secondAttribute="centerX" id="yg3-dt-841"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="587" height="518"/>
+            <connections>
+                <outlet property="dateIntervalLabel" destination="dha-kl-JND" id="AxV-HM-qvr"/>
+                <outlet property="periodInfoLabel" destination="FaW-gi-jwy" id="P7t-UJ-es1"/>
+                <outlet property="sumLabel" destination="hG3-cU-z0j" id="pEq-Zv-X4y"/>
+            </connections>
+            <point key="canvasLocation" x="771.73913043478262" y="127.23214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="backgroundBlue">
+            <color red="0.090000003576278687" green="0.029999999329447746" blue="0.31999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="baseLight">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

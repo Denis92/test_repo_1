@@ -1,0 +1,27 @@
+/* 
+  PassportDataConfirmation.strings
+  ForwardLeasing
+*/
+
+"lastname.field.title" = "Фамилия";
+"firstname.field.title" = "Имя";
+"middlename.field.title" = "Отчество";
+"dateOfBirth.field.title" = "Дата рождения";
+"place.of.birth.field.title" = "Место рождения";
+"passport.field.title" = "Серия и номер паспорта";
+"date.of.receiving" = "Дата выдачи";
+"issued.by" = "Кем выдан";
+"division.code" = "Код подразделения";
+"registration.address" = "Адрес регистрации";
+"apartment.number" = "Кв";
+"type.of.employment" = "Тип занятости";
+"salary" = "Среднемесячный доход";
+"check.button.title" = "Всё верно";
+"repeat.scan.button.title" = "Сканировать паспорт заново";
+"change.passport.scan.button.title" = "Изменились паспортные данные?";
+"lets.check.title" = "Давайте проверим";
+
+"occupation.employee" = "Наемный работник";
+"occupation.enterpreneur" = "ИП (Индивидуальный предприниматель)";
+"occupation.unemployed" = "Безработный";
+"occupation.retired" = "Пенсионер";

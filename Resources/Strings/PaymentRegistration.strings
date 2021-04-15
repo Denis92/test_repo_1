@@ -1,0 +1,20 @@
+/* 
+  PaymentPeriodPicker.strings
+  ForwardLeasing
+*/
+
+"title" = "Платёж";
+"to.date" = "до %@";
+"pay.sum" = "Оплатить %@";
+"total.overdue.sum" = "штраф %ld за просрочку";
+"pay.for.two.months" = "за %@ + %@";
+"payments.on" = "платежи по %@";
+"all.installment.plans" = "По всем рассрочкам";
+"payment.number" = "Платёж #";
+"from.to" = "С %@ по %@";
+"new.card" = "Новая карта";
+"save.card.data" = "Сохранить данные карты";
+"success.payment.title" = "Платёж отправлен!";
+"success.payment.subtitle" = "Оплата обрабатывается до 5 минут";
+"failed.payment.title" = "Ошибка";
+"failed.payment.subtitle" = "Платеж не выполнен.\n Проверьте данные банковской карты";

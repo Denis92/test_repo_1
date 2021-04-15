@@ -1,0 +1,12 @@
+/* 
+  CurrentApplications.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Текущие заявки";
+"screen.description.new" = "Для продолжения оформления, вам нужно выбрать одну заявку. Остальные заявки будут аннулированы.";
+"screen.description.upgrade" = "Для продолжения оформления, вам необходимо аннулировать ранее созданный договор.";
+"continue.application.button.title" = "Продолжить оформление";
+"cancel.application.button.title" = "Аннулировать заявку";
+"application.item.title" = "Заявка от %@ на %@";
+"application.item.price" = "%@/мес.";

@@ -1,0 +1,20 @@
+/* 
+  TextInputs.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Поля ввода";
+"username.field.title" = "Имя пользователя";
+"username.field.hint" = "Ваши отзывы и комментарии будут публиковаться от этого имени, оно будет показано в вашем публичном профиле.";
+"city.field.title" = "Город";
+"email.field.title" = "Email";
+"date.of.birth.title" = "Дата рождения";
+"password.field.title" = "Пароль";
+"address.field.title" = "Адрес";
+"apartment.field.title" = "Кв.";
+"cities.tomsk" = "Томск";
+"cities.novosibirsk" = "Новосибирск";
+"cities.st.petersburg" = "Санкт-Петербург";
+"cities.moscow" = "Москва";
+"phone.field.title" = "Телефон";
+"pin.field.title" = "PIN-код";

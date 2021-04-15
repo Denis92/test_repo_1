@@ -1,0 +1,40 @@
+/* 
+  ContractSigning.strings
+  ForwardLeasing
+*/
+
+"screen.title" = "Подписание договора";
+
+"pdf.button.title" = "PDF";
+"contract.pdf.title" = "Договор";
+"agreement.pdf.title" = "Соглашение";
+"new.leasing.contract.pdf.title" = "Новый договор лизинга";
+
+"contract.signed.state.title" = "Подписан";
+"contract.not.signed.state.title" = "Не подписан";
+"agreement.signed.state.title" = "Подписано";
+"agreement.not.signed.state.title" = "Не подписано";
+
+"contract.totoal.price.title" = "Сумма выплат за %@";
+"exchange.description.text" = "Бесплатно обменяйте на новый или продолжайте вносить ежемесячные платежи до полного выкупа";
+"contract.agreement.text" = "Я ознакомился с текстом и подтверждаю свое согласие на осуществление ООО \"Форвард Лизинг\" взаимодействия с третьими лицами в случае просрочки мною исполнения обязательств по Договору лизинга.";
+"contract.agreement.key.word" = "согласие";
+"sign.contract.button.title" = "Подписать договор";
+
+"sms.signing.success.title" = "Договор оформлен!";
+
+
+/* Contract info */
+
+"contract.info.monthly.payment.decription" = "Ежемесячный платёж";
+"contract.info.months.count.description" = "Срок договора";
+"contract.info.early.exchange.title" = "Ранний обмен на новый";
+"contract.info.early.exchange.description" = "%@ после %@";
+"contract.info.free.exchange.title" = "Бесплатный обмен на новый";
+"contract.info.free.exchange.description" = "После %@";
+"contract.info.residual.sum.description" = "Остаточная стоимость: не нужно выплачивать при обмене на новый";
+"contract.info.early.redemption.title" = "Досрочный выкуп";
+"contract.info.early.redemption.description" = "В любой момент";
+"contract.info.no.overpayment.title" = "Без переплат";
+"contract.info.no.overpayment.description" = "Плата за услуги лизинга отсутствует";
+"contract.info.leasing.service.payment.description" = "Плата за услуги лизинга";

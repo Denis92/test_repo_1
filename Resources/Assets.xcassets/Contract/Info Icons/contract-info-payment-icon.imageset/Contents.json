@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "contract-info-payment-icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

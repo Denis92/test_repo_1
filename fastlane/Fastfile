@@ -1,0 +1,291 @@
+fastlane_version "2.48.0"
+
+default_platform :ios
+
+platform :ios do
+  ENV["MATCH_PASSWORD"] = "123Letmein"
+  ftpurl = "ftp://storage:xbu85BbY@kode-t.ru/"
+  projectName = "ForwardLeasing"
+  targetName = "ForwardLeasing"
+  matchAppID = "*" 
+  matchGitURL = "git@git.kode-t.ru:base-code/ios-code-signing.git"
+  tempKeychainPassword = "temppassword"
+  tempKeychainName = "fastlane_keychain"
+
+  desc "Download development profiles and certficates"
+  lane :dev_cert_update do
+    match(
+      type: "development", 
+      storage_mode: "git", 
+      git_url: "#{matchGitURL}", 
+      app_identifier: "#{matchAppID}", 
+      shallow_clone: true, 
+      readonly: true
+    )
+  end
+
+  desc "Download ad-hoc profiles and certficates"
+  lane :adhoc_cert_update do
+    match(
+      type: "adhoc", 
+      storage_mode: "git", 
+      git_url: "#{matchGitURL}", 
+      app_identifier: "#{matchAppID}", 
+      shallow_clone: true, 
+      readonly: true
+    )
+  end
+
+  desc "Download appstore profiles and certficates"
+  lane :appstore_cert_update do
+    match(
+      type: "appstore", 
+      storage_mode: "git", 
+      git_url: "#{matchGitURL}", 
+      app_identifier: "#{matchAppID}", 
+      shallow_clone: true, 
+      readonly: true
+    )
+  end
+
+  desc "Add git tag to commit"
+  lane :add_git_tag_from_version do
+     version = get_version_number(target: "#{targetName}")
+     build = get_build_number
+     add_git_tag(tag: version + "-" + build)
+     push_git_tags
+  end
+
+  desc "Increment build number without pushing"
+  lane :bump_build_number_no_commit do
+    increment_build_number
+  end
+
+  desc "Reset git repo without deleting ignored files"
+  lane :reset_repo_from_origin do
+    reset_git_repo(
+      force: true,
+      exclude: [
+        "Resources/R.generated.swift",
+        "/Pods",
+        "#{projectName}.xcodeproj",
+        "#{projectName}.xcworkspace"
+      ]
+    )
+  end 
+
+  lane :bump_xcodegen_build_number do
+    build_number = get_build_number.to_i
+
+    data = YAML.load_file "../project.yml"
+    data["targets"]["#{targetName}"]["settings"]["base"]["CURRENT_PROJECT_VERSION"] = build_number
+    File.open("../project.yml", 'w') { |f| YAML.dump(data, f) }
+
+    #commit version bump
+    git_commit(path: "project.yml", message: "Increment build number")
+    push_to_git_remote
+  end
+
+  lane :create_file do |options|
+    file_name = sh "basename #{options[:file_path]}"
+    dir_name = sh "dirname #{options[:file_path]}"
+    Dir.chdir ".." do
+      if File.exist?(options[:file_path]) #skip creating file if it exists
+        next
+      end
+      sh "mkdir -p #{dir_name}"
+      sh "touch #{options[:file_path]}"
+    end
+  end
+
+  lane :develop do
+      match(
+        type: "development", 
+        storage_mode: "git", 
+        git_url: "#{matchGitURL}", 
+        app_identifier: "#{matchAppID}", 
+        shallow_clone: true, 
+        readonly: true,
+        keychain_name: "#{tempKeychainName}",
+        keychain_password: "#{tempKeychainPassword}"
+      )
+
+      version = get_version_number(target: "#{targetName}")
+      build_number = get_build_number
+      signature = "v.#{version}-#{build_number}"
+
+      filename = "#{targetName}." +  version + "." + build_number + ".dev"
+      dsymfilepath = filename + ".app.dSYM.zip"
+      ipafilepath = filename + ".ipa"
+      ftpdsympath = ftpurl + dsymfilepath
+      gym(
+          clean: true, 
+          scheme: "#{targetName}", 
+          configuration: 'Develop', 
+          export_method: 'development',
+          archive_path: "temp_output/#{targetName}",
+          derived_data_path: 'temp_output',
+          output_name: filename
+      )
+      Dir.chdir ".." do
+          sh "ftp -in -u #{ftpurl} #{dsymfilepath}"
+          sh "echo \"##teamcity[setParameter name='build.signature' value='#{signature}']\""
+          sh "echo \"##teamcity[setParameter name='FTP.dev_link' value='#{ftpdsympath}']\""
+          sh "echo \"##teamcity[setParameter name='OTA.dev_link' value='$(curl --form build=@#{ipafilepath} http://ota.kode-t.ru/api.php)']\""
+          sh "rm -f #{filename}.app.dSYM.zip
+              rm -f #{filename}.ipa"
+      end
+  end
+
+  lane :live do
+      match(
+        type: "adhoc", 
+        storage_mode: "git", 
+        git_url: "#{matchGitURL}", 
+        app_identifier: "#{matchAppID}", 
+        shallow_clone: true, 
+        readonly: true,
+        keychain_name: "#{tempKeychainName}",
+        keychain_password: "#{tempKeychainPassword}"
+      )
+
+      version = get_version_number(target: "#{targetName}")
+      build_number = get_build_number
+      signature = "v.#{version}-#{build_number}"
+
+      filename = "#{targetName}." +  version + "." + build_number + ".live"
+      dsymfilepath = filename + ".app.dSYM.zip"
+      ipafilepath = filename + ".ipa"
+      ftpdsympath = ftpurl + dsymfilepath
+      gym(
+          clean: true, 
+          scheme: "#{targetName}", 
+          configuration: 'Live', 
+          export_method: 'ad-hoc',
+          archive_path: "temp_output/#{targetName}",
+          derived_data_path: 'temp_output',
+          output_name: filename
+      )
+      Dir.chdir ".." do
+          sh "ftp -in -u #{ftpurl} #{dsymfilepath}"
+          sh "echo \"##teamcity[setParameter name='build.signature' value='#{signature}']\""
+          sh "echo \"##teamcity[setParameter name='FTP.live_link' value='#{ftpdsympath}']\""
+          sh "echo \"##teamcity[setParameter name='OTA.live_link' value='$(curl --form build=@#{ipafilepath} http://ota.kode-t.ru/api.php)']\""
+          sh "rm -f #{filename}.app.dSYM.zip
+              rm -f #{filename}.ipa"
+      end
+  end
+  
+  lane :appstore_build do
+      match(
+        type: "appstore", 
+        storage_mode: "git", 
+        git_url: "#{matchGitURL}", 
+        app_identifier: "#{matchAppID}", 
+        shallow_clone: true, 
+        readonly: true,
+        keychain_name: "#{tempKeychainName}",
+        keychain_password: "#{tempKeychainPassword}"
+      )
+      
+      version = get_version_number(target: "#{targetName}")
+      build_number = get_build_number
+      signature = "v.#{version}-#{build_number}"
+
+      filename = "#{targetName}." +  version + "." + build_number + ".appstore"
+      dsymfilepath = filename + ".app.dSYM.zip"
+      ipafilepath = filename + ".ipa"
+      ftpdsympath = ftpurl + dsymfilepath
+      gym(
+          clean: true, 
+          scheme: "#{targetName}", 
+          configuration: 'AppStore', 
+          export_method: 'app-store',
+          archive_path: "temp_output/#{targetName}",
+          derived_data_path: 'temp_output',
+          output_name: filename
+      )
+      Dir.chdir ".." do
+          sh "ftp -in -u #{ftpurl} #{dsymfilepath}"
+          sh "echo \"##teamcity[setParameter name='build.signature' value='#{signature}']\""
+          sh "echo \"##teamcity[setParameter name='FTP.appstore_link' value='#{ftpdsympath}']\""
+          sh "echo \"##teamcity[setParameter name='OTA.appstore_link' value='$(curl --form build=@#{ipafilepath} http://ota.kode-t.ru/api.php)']\""
+          sh "rm -f #{filename}.app.dSYM.zip
+              rm -f #{filename}.ipa"
+      end
+  end
+
+lane :internal_build do
+    def ensure_temp_keychain(name, password)
+      delete_keychain(
+        name: name
+      ) if File.exist? File.expand_path("~/Library/Keychains/#{name}")
+      create_keychain(
+        name: name,
+        password: password,
+        unlock: true,
+        timeout: false
+      )
+    end
+
+    #reset repo
+    reset_git_repo(
+      force: true,
+      exclude: [
+        "/Pods"
+      ]
+    )
+
+    unlock_keychain(path:"login.keychain", password:"BYzny9xM") 
+    sh "security set-keychain-settings -t 3600 -l ~/Library/Keychains/login.keychain"
+
+    clear_derived_data
+
+    #create R.generated.swift file
+    create_file(file_path: "Resources/R.generated.swift")
+
+    #generate .xcodeproj file
+    Dir.chdir ".." do
+      sh "xcodegen generate"
+    end
+
+    #update dependencies
+    cocoapods(repo_update: true)
+
+    #create build output folder
+    sh "mkdir -p temp_output"
+
+    ensure_temp_keychain("#{tempKeychainName}", "#{tempKeychainPassword}")
+
+    #bump project build number 
+    bump_build_number_no_commit
+
+    #build all needed configurations
+    develop
+    if ENV['ENV_BUILD_APPSTORE'] == "true"
+      appstore_build
+    else
+      sh "echo \"##teamcity[message text='AppStore build not enabled']\""
+    end
+
+    #delete temp files after building
+    Dir.chdir ".." do
+      sh "rm -f -r temp_output/*"
+    end
+
+    #update version and commit project.yml
+    bump_xcodegen_build_number
+
+    #update version and commit tag
+    add_git_tag_from_version
+
+    #reset repo after building
+    reset_git_repo(
+      force: true,
+      exclude: [
+        "/Pods"
+      ]
+    )
+  end
+
+end

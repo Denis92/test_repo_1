@@ -1,0 +1,27 @@
+/* 
+  ProductCard.strings
+  ForwardLeasing
+*/
+
+"month.payment.title" = "%@/мес.";
+"already.paid.title" = "Уже выплачено: %@";
+"next.payment.date.title" = "Внести до %@";
+"buy.at.title" = "Оформлена %@";
+"delivery.canceled" = "Доставка отменена";
+
+"button.continue.title" = "Продолжить оформление";
+"button.cancel.application.title" = "Аннулировать заявку";
+"button.check.status.title" = "Проверить статус заявки";
+"button.sign.contract.title" = "Подписать договор";
+"button.cancel.contract.title" = "Аннулировать договор";
+"button.delivery.type.title" = "Выбрать способ получения";
+"button.delivery.type.pickup.without.store.point.title" = "Выбрать адрес самовывоза";
+"button.delivery.type.pickup.with.store.point.title" = "Подробнее";
+"button.sign.delivery.title" = "Подписать соглашение";
+"button.cancel.delivery.title" = "Отменить доставку";
+"button.pay.title" = "Оплатить";
+"button.upgrade.title" = "Продолжить";
+"button.return.title" = "Продолжить";
+"button.buy.again.title" = "Купить еще раз";
+"button.cancel.upgrade.title" = "Отменить заявку";
+"button.cancel.return.title" = "Отменить заявку";

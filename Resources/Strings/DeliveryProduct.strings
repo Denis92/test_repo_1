@@ -1,0 +1,45 @@
+/* 
+  DeliveryProduct.strings
+  ForwardLeasing
+*/
+
+"delivery.address.field.title" = "Адрес доставки";
+"select.title" = "Получение товара";
+"select.title.label.text" = "Выберите способ получения товара";
+"select.delivery.title" = "Оформление доставки";
+"select.title.label.only.delivery.text" = "Оформите доставку товара";
+"select.title.label.only.pickup.text" = "Выберите магазин, в котором вы хотите забрать свою покупку";
+
+"select.segmented.control.shipment.title" = "Доставка";
+"select.segmented.control.pickup.title" = "Самовывоз";
+"select.pickup.label.text" = "Выберите магазин, в котором вы хотите забрать свою покупку";
+"select.pick.point.button.title" = "Выбрать магазин";
+"cancel.contract.button.title" = "Аннулировать договор";
+
+"post.index.title" = "Индекс";
+"phone.number.title" = "Контактный телефон";
+"delivery.cost.title" = "Стоимость доставки";
+"expected.delivery.date.title" = "Ожидаемая дата доставки";
+"expected.delivery.date" = "до %@";
+
+"repeat.delivery.button.title" = "Попробовать снова";
+"select.another.address.button.title" = "Выбрать другой адрес";
+"continue.later.button.title" = "Продолжить позже";
+"selected.good.is.unavailable.title" = "Выбранного товара нет в наличии, но он скоро появится!";
+"selected.good.is.unavailable.subtitle" = "Продолжите оформление в вашем личном кабинете позже, либо оформите новый договор с получением в магазине-партнёре.";
+
+"select.delivery.regular.error" = "Ошибка оформления доставки.";
+"select.delivery.address.unavailable.error" = "Оформление доставки невозможно. Доставка по указанному адресу не осуществляется.";
+
+"check.delivery.payment.timer.title" = "Обработка платежа...";
+"check.delivery.payment.timer.subtitle" = "Дождитесь завершения оплаты. Курьер свяжется с вами, чтобы подтвердить адрес и время.";
+
+"delivery.payment.failed.title" = "Оплата не подтвердилась";
+"delivery.payment.failed.subtitle" = "Если деньги не списались, попробуйте повторить оплату. Если списались, проверьте статус оплаты через 10 минут.";
+"repeat.payment.button.title" = "Попробовать еще раз";
+"check.later.button.title" = "Проверить позже";
+"cancel.delivery.button.title" = "Отменить доставку";
+"cancel.alert.message" = "Нажимая «Да» вы подтверждаете отмену доставки и договора лизинга, заключенного с ООО «Форвард лизинг». Денежные средства будут возвращены на карту.";
+
+"payment.success.title" = "Оплата успешно зарегистрирована!";
+ 

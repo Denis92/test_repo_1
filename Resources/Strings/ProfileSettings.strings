@@ -1,0 +1,27 @@
+/* 
+  ProfileSettings.strings
+  ForwardLeasing
+*/
+
+"title" = "Настройки профиля";
+"credit.cards.title" = "Банковские карты";
+"logout.message" = "Выйти из профиля?";
+"access.title" = "Доступ";
+"update.pin.code.text" = "Изменить PIN-код для входа";
+"update.pin.code.title" = "Изменить PIN-код";
+"code.confirmation.text" = "Для продолжения введите код из SMS, который мы вам отправили.";
+"information.section.tilte" = "Информация";
+"about.app.title" = "О приложении";
+"contact.with.us" = "Связаться с нами";
+"policy.of.processing.personal.data.title" = "Политика обработки данных";
+"leasing.rules.title" = "Правила лизинга";
+"contact.via.call.title" = "Звонок";
+"contact.via.email.title" = "Почта";
+"email.support.theme" = "Обращение Forward Leasing %@";
+"platform.text" = "Платформа – %@";
+"os.version.text" = "Версия ОС – %@";
+"app.version.text" = "Версия МП – %@";
+"phone.number.text" = "Номер телефона – %@";
+"about.app.title" = "О приложении";
+"about.app.version.text" = "Версия %@";
+"about.app.description.text" = "Мобильное приложение Forward упрощает оформление рассрочки на товары в магазинах-партнёрах. Forward станет вашим проводником на каждом из этапов: получение доступной суммы у банка, оформление договора и их погашение.";
